@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app {
+    @apply flex flex-col items-center justify-center min-w-[23.4375rem] min-h-screen text-[0.75rem] bg-gradient-to-b from-[hsl(273,75%,66%)] to-[hsl(240,73%,65%)];
+  }
+
+  header {
+    @apply h-28 md:h-0;
+  }
+
+  main {
+    @apply w-full max-w-[23.4375rem] px-6 md:max-w-5xl;
+  }
+}
+
+@layer utilities {
+  .md-img {
+    background-image: url("./images/bg-pattern-desktop.svg");
+    @apply bg-no-repeat bg-left-bottom bg-cover;
+  }
+
+  .h-animate {
+    @apply transition-[height] duration-1000 delay-1000;
+  }
+}
